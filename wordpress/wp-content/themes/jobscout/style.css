@@ -6561,6 +6561,63 @@ JOB LISTING PAGE
   color: #2ace5e;
   margin-right: 5px;
 }
+.btn-TCL{
+  background-color: #DDDDDD;
+  border-radius: 6px;
+  margin-top: 10px;
+  width:100%;
+  height: 30px;
+  line-height: 20px;
+}
+.btn-TCL > ul {
+  display: flex;
+}
+.btn-TCL > ul > li{
+  list-style: none;
+  margin-top: 1px;
+}
+.btn-TCL > ul > li > .point-topbb{
+  position: static;
+  font-size: 15px;
+  margin-left: -58px;
+  margin-right: 80px;
+  color: #999999;
+}
+.btn-TCL > ul > li > p > a{
+  position: static;
+  font-size: 15px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #999999;
+}
+.btn-TCL > ul > li > .point-topbb::after{
+  content:'';
+  position:absolute;
+  background-color: black;
+  width: 1px;
+  height: 10px;
+  padding: 6px 0; 
+  margin: 4px 10px;
+}
+.job_jobs{
+  display: flex;
+  flex-wrap: wrap;
+}
+.company-title-short{
+  margin-top: 10px;
+}
+.company-title-short > li a{
+  text-decoration: none;
+  color: #999999;
+}
+.company-title-short > li{
+  color: #999999;
+  font-size: 15px;
+}
+.clear-li{
+  color: #999999;
+}
+
 
 <<<<<<< HEAD
 .site-main .entry-content div.job_listings div.job_listings article .entry-meta .company-address svg {
@@ -9986,4 +10043,118 @@ RESPONSIVE STYLESHEET
 .topnav a.active {
   border-bottom: 3px solid red;
 }
+<<<<<<< HEAD
 >>>>>>> 1_LePhuongLoc
+=======
+/*footer*/
+h2.index_title {
+  font-weight: 700 !important;
+  text-align: center;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+.h2.index_title {
+  font-weight: 700 !important;
+  text-align: center;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+.list-view .site-main article {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  margin-bottom: 40px;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.list-view .site-main article .post-thumbnail {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+}
+.site-main article .entry-content p{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  display: table;
+  width: 100%
+}
+.site-main article .entry-header .entry-title {
+  margin: 0;
+  font-size: 1.112em;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.readmore-new .readmore-link {
+  font-weight: bold;
+  color: orange;
+  text-decoration: none;
+}
+.rightsidebar #primary {
+  float: left;
+  width: 75%;
+  padding-right: 40px;
+}
+.blog-format figure.post-thumbnail {
+  padding: 20px 0 20px 20px;
+}
+
+.blog-format {
+  width: 600px !important;
+  height: 350px !important;
+  padding: 20px !important;
+}
+
+
+.blog-format .content-wrap{
+  width: 300px !important;
+    height: 300px !important;
+}
+
+
+/*FOOTER-B*/
+.footer_B {
+  height: 400px;
+  text-align: center;
+}
+.list_logo {
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+.main_footer_b{
+  text-align: center;
+  padding-right: 50px;
+  text-decoration: none;
+}
+.facebook {
+  background-image: url(https://img.icons8.com/color/96/facebook-new.png);
+  width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-position: center;
+}
+.branch {
+  display: inline-block;
+  padding: 0 30px;
+}
+.google {
+  background-image: url(https://img.icons8.com/fluency/96/google-logo.png);
+  width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-position: center;
+}
+.line {
+  background-image: url(https://img.icons8.com/color/96/000000/line-me.png);
+  width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-position: center;
+}
+.twitter {
+  background-image: url(https://img.icons8.com/color/96/twitter-circled--v1.png);
+  width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-position: center;
+}
+>>>>>>> 2_4_PhamHuuKy

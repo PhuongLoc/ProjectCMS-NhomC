@@ -7,6 +7,7 @@
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 <<<<<<< HEAD
+<<<<<<< HEAD
 RewriteBase /ProjectCMS-NhomC.git/wordpress/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -19,6 +20,13 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /CMS-T4/7-job/job/wordpress/index.php [L]
 >>>>>>> 2_5_VoThanhLuan
+=======
+RewriteBase /wordpress/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wordpress/index.php [L]
+>>>>>>> 2_4_PhamHuuKy
 </IfModule>
 
 # END WordPress

@@ -46,10 +46,10 @@ $post_year = get_the_date('Y', $post->ID)
 		<div class="btn-TCL">
 			<ul>
 				<li>
-					<p><?php wpjm_the_job_types(); ?></p>
+					<p class="point-topbb"><?php wpjm_the_job_types(); ?></p>
 				</li>
 				<li>
-					<p><?php the_company_name(); ?></p>
+					<p class="point-topbb"><?php the_company_name(); ?></p>
 				</li>
 				<li>
 					<p class="clear-li"><?php the_job_location(true); ?></p>

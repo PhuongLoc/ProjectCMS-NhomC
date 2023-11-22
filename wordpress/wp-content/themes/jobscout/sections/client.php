@@ -7,7 +7,7 @@
 
 if( is_active_sidebar( 'client' ) ){ ?>
 	<section id="client-section" class="client-section">
-		<div class="container">
+		<div class="container-fluid">
 	    	<?php dynamic_sidebar( 'client' ); ?>
 		</div>
 	</section> <!-- .bg-cta-section -->

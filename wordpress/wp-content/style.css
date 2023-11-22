@@ -83,14 +83,21 @@ p.text-submit{
     list-style: none;
     margin-top: 1px;
   }
-  .btn-TCL > ul > li > p{
+  .btn-TCL > ul > li > .point-topbb{
     position: static;
     font-size: 15px;
-    margin-left: -50px;
+    margin-left: -58px;
     margin-right: 80px;
     color: #999999;
   }
-  .btn-TCL > ul > li > p:nth-child(1)::after{
+  .btn-TCL > ul > li > p > a{
+    position: static;
+    font-size: 15px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #999999;
+  }
+  .btn-TCL > ul > li > .point-topbb::after{
     content:'';
     position:absolute;
     background-color: black;
@@ -150,3 +157,44 @@ p.text-submit{
 
   /* newsletter */
   
+/* phan subri o luan */
+
+form.customize-unpreviewable, form.customize-unpreviewable input, form.customize-unpreviewable select, form.customize-unpreviewable button, a.customize-unpreviewable, area.customize-unpreviewable{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 50px;
+  }
+  
+  
+  /* fix */
+  .wpcf7 {
+	background: #ea751e;
+	width: 100%;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px 20px 20px 50px !important;
+  
+  }
+  .wpcf7 input[type="text"],
+  .wpcf7 input[type="email"],
+  .wpcf7 input[type="tel"],
+  textarea {
+	font-size: 16px;
+	background-color: #fff;
+	/* border: none; */
+	width: 95%;
+	padding: 2%;
+  }
+  .wpcf7 input[type="submit"] {
+	color: #ffffff;
+    left: 60%;
+	font-size: 18px;
+	font-weight: 600;
+	background: #ea751e;
+   border: 1px solid #fff;
+	width: auto;
+	text-transform: uppercase;
+  }
+.wpcf7 input[type="email"]{
+    margin-right: 160px;
+}
