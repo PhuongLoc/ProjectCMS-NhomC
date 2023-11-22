@@ -203,6 +203,7 @@ function jobscout_get_footer_copyright(){
         esc_html_e( '&copy; Copyright ', 'jobscout' );
         echo date_i18n( esc_html__( 'Y', 'jobscout' ) );
         echo ' <a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a>. ';
+<<<<<<< HEAD
         esc_html_e( 'All Rights Reserved. ', 'jobscout' );
 =======
         esc_html_e( '&copy; ', 'jobscout' );
@@ -210,6 +211,9 @@ function jobscout_get_footer_copyright(){
         echo ' <a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a>. ';
         // esc_html_e( 'All Rights Reserved. ', 'jobscout' );
 >>>>>>> 2_5_VoThanhLuan
+=======
+        // esc_html_e( 'All Rights Reserved. ', 'jobscout' ); //FOOTER
+>>>>>>> 1_LePhuongLoc
     }
     echo '</span>';
 }

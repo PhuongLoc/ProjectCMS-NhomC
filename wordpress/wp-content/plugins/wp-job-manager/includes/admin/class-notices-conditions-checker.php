@@ -24,11 +24,14 @@ class Notices_Conditions_Checker {
 	const ALL_WPJM_SCREEN_IDS = [
 		'edit-job_listing',
 <<<<<<< HEAD
+<<<<<<< HEAD
 		'edit-job_listing_category',
 		'edit-job_listing_type',
 		'job_listing_page_job-manager-addons',
 =======
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 		'job_listing_page_job-manager-settings',
 	];
 

@@ -1,7 +1,10 @@
 # WP Job Manager
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 1_LePhuongLoc
 ## 2.1.0 - 2023-11-17
 * Fix: Remove public update endpoint and add nonce check (#2642)
 
@@ -19,7 +22,10 @@
 * Change: Reorganize administration menu (#2621)
 * Change: Update naming from Add-ons to Extensions, Marketplace (#2621)
 
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 ## 1.42.0 - 2023-10-05
 New!
 

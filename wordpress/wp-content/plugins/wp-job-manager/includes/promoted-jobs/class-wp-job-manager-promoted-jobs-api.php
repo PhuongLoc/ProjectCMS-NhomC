@@ -70,6 +70,7 @@ class WP_Job_Manager_Promoted_Jobs_API {
 			]
 		);
 <<<<<<< HEAD
+<<<<<<< HEAD
 		register_rest_route(
 			self::NAMESPACE,
 			self::REST_BASE . '/(?P<id>[\d]+)',
@@ -94,6 +95,9 @@ class WP_Job_Manager_Promoted_Jobs_API {
 =======
 
 >>>>>>> 2_5_VoThanhLuan
+=======
+
+>>>>>>> 1_LePhuongLoc
 		register_rest_route(
 			self::NAMESPACE,
 			self::REST_BASE . '/(?P<job_id>[\d]+)',
@@ -257,20 +261,30 @@ class WP_Job_Manager_Promoted_Jobs_API {
 	 * Update the promoted job status.
 	 *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	 * @deprecated 2.1.0
 	 *
 >>>>>>> 2_5_VoThanhLuan
+=======
+	 * @deprecated 2.1.0
+	 *
+>>>>>>> 1_LePhuongLoc
 	 * @param WP_REST_Request $request Full data about the request.
 	 *
 	 * @return WP_Error|WP_REST_Response The response, or WP_Error on failure.
 	 */
 	public function update_job_status( $request ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		_deprecated_function( __METHOD__, '2.1.0', 'WP_Job_Manager_Promoted_Jobs_API::refresh_status' );
 
 >>>>>>> 2_5_VoThanhLuan
+=======
+		_deprecated_function( __METHOD__, '2.1.0', 'WP_Job_Manager_Promoted_Jobs_API::refresh_status' );
+
+>>>>>>> 1_LePhuongLoc
 		$post_id = $request->get_param( 'id' );
 		$status  = $request->get_param( 'status' );
 		$post    = get_post( $post_id );

@@ -273,8 +273,7 @@ function jobscout_entry_header(){ ?>
             }else{
                 if( 'post' === get_post_type() ){
                     echo '<div class="entry-meta">';
-                    if( ! $hide_author ) jobscout_posted_by();
-                    if( ! $hide_date ) jobscout_posted_on();
+                    
                     echo '</div>';
                 }
             }
@@ -325,48 +324,52 @@ if( ! function_exists( 'jobscout_entry_footer' ) ) :
 /**
  * Entry Footer
 */
-function jobscout_entry_footer(){ 
-    $readmore = get_theme_mod( 'read_more_text', __( 'Read More', 'jobscout' ) );
-    $ed_post_date   = get_theme_mod( 'ed_post_date', false ); ?>
-	<footer class="entry-footer">
-		<?php
-			if( is_single() ){
-			    jobscout_tag();
-			}
-            
-            if( is_front_page() || is_home() || is_search() || is_archive() ){
-                echo '<a href="' . esc_url( get_the_permalink() ) . '" class="readmore-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.207 8.58"><defs><style>.c{fill:none;stroke:#2ace5e;}</style></defs><g transform="translate(-701.5 -958.173)"><path class="c" d="M-9326.909-9204.917l-3.937,3.937,3.937,3.937" transform="translate(-8613.846 -8238.518) rotate(180)"/><line class="c" x2="15.154" transform="translate(701.5 962.426)"/></g></svg>' . esc_html( $readmore ) . '</a>';    
-            }
+function jobscout_entry_footer()
+    {
+        $readmore = get_theme_mod('read_more_text', __('Read More', 'jobscout'));
+        $ed_post_date = get_theme_mod('ed_post_date', false); ?>
+                <footer class="entry-footer">
+                    <?php
+                    if (is_single()) {
+                        jobscout_tag();
+                    }
 
-            if( is_single() ) echo '<div class="entry-footer-right">';
-            if( 'post' === get_post_type() && is_single() ){
-                if( ! $ed_post_date ) jobscout_posted_on( true );
-                jobscout_comment_count();
-            }
-            
-            if( get_edit_post_link() ){
-                edit_post_link(
-                    sprintf(
-                        wp_kses(
-                            /* translators: %s: Name of current post. Only visible to screen readers */
-                            __( 'Edit <span class="screen-reader-text">%s</span>', 'jobscout' ),
-                            array(
-                                'span' => array(
-                                    'class' => array(),
-                                ),
-                            )
-                        ),
-                        get_the_title()
-                    ),
-                    '<span class="edit-link">',
-                    '</span>'
-                );
-            }
-            if( is_single() ) echo '</div>';
-		?>
-	</footer><!-- .entry-footer -->
-	<?php 
-}
+                    if (is_front_page() || is_home() || is_search() || is_archive()) {
+                        echo '<div class="readmore-new"><a href="' . esc_url(get_the_permalink()) . '" class="readmore-link">' . esc_html($readmore) . '</a>';
+                    }
+
+                    if (is_single())
+                        echo '<div class="entry-footer-right">';
+                    if ('post' === get_post_type() && is_single()) {
+                        if (!$ed_post_date)
+                            jobscout_posted_on(true);
+                        jobscout_comment_count();
+                    }
+
+                    // if (get_edit_post_link()) {
+                    //     edit_post_link(
+                    //         sprintf(
+                    //             wp_kses(
+                    //                 /* translators: %s: Name of current post. Only visible to screen readers */
+                    //                 __('Edit <span class="screen-reader-text">%s</span>', 'jobscout'),
+                    //                 array(
+                    //                     'span' => array(
+                    //                         'class' => array(),
+                    //                     ),
+                    //                 )
+                    //             ),
+                    //             get_the_title()
+                    //         ),
+                    //         '<span class="edit-link">',
+                    //         '</span>'
+                    //     );
+                    // }
+                    if (is_single())
+                        echo '</div>';
+                    ?>
+                </footer><!-- .entry-footer -->
+                <?php
+    }
 endif;
 add_action( 'jobscout_post_entry_content', 'jobscout_entry_footer', 20 );
 add_action( 'jobscout_page_entry_content', 'jobscout_entry_footer', 20 );
@@ -531,9 +534,13 @@ function jobscout_footer_top(){
     				<div class="col">
     				   <?php dynamic_sidebar( $active ); ?>	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                        <?php echo ' <a href="' . esc_url(home_url('/')) . '">' . esc_html(get_bloginfo('name')) . '</a> '; ?>
 >>>>>>> 2_5_VoThanhLuan
+=======
+                       <!-- <?php echo ' <a href="' . esc_url(home_url('/')) . '">' . esc_html(get_bloginfo('name')) . '</a> '; ?> -->
+>>>>>>> 1_LePhuongLoc
     				</div>
                 <?php } ?>
                 </div>
@@ -559,12 +566,17 @@ function jobscout_footer_bottom(){ ?>
             <?php
                 jobscout_get_footer_copyright();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 jobscout_ed_author_link();
                 jobscout_ed_wp_link();
 =======
                 // jobscout_ed_author_link();
                 // jobscout_ed_wp_link();
 >>>>>>> 2_5_VoThanhLuan
+=======
+                // jobscout_ed_author_link();
+                // jobscout_ed_wp_link();
+>>>>>>> 1_LePhuongLoc
             ?>               
             </div>
 		</div>

@@ -142,10 +142,15 @@ class WP_Job_Manager_Permalink_Settings {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		check_admin_referer( 'update-permalink' );
 
 >>>>>>> 2_5_VoThanhLuan
+=======
+		check_admin_referer( 'update-permalink' );
+
+>>>>>>> 1_LePhuongLoc
 		if ( function_exists( 'switch_to_locale' ) ) {
 			switch_to_locale( get_locale() );
 		}
@@ -153,9 +158,12 @@ class WP_Job_Manager_Permalink_Settings {
 		$permalink_settings = WP_Job_Manager_Post_Types::get_raw_permalink_settings();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// phpcs:disable WordPress.Security.NonceVerification.Missing -- WP core handles nonce check for settings save.
 =======
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 		$permalink_settings['job_base']      = isset( $_POST['wpjm_job_base_slug'] ) ? sanitize_title_with_dashes( wp_unslash( $_POST['wpjm_job_base_slug'] ) ) : '';
 		$permalink_settings['category_base'] = isset( $_POST['wpjm_job_category_slug'] ) ? sanitize_title_with_dashes( wp_unslash( $_POST['wpjm_job_category_slug'] ) ) : '';
 		$permalink_settings['type_base']     = isset( $_POST['wpjm_job_type_slug'] ) ? sanitize_title_with_dashes( wp_unslash( $_POST['wpjm_job_type_slug'] ) ) : '';
@@ -164,9 +172,12 @@ class WP_Job_Manager_Permalink_Settings {
 			$permalink_settings['jobs_archive'] = sanitize_title_with_dashes( wp_unslash( $_POST['wpjm_job_listings_archive_slug'] ) );
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// phpcs:enable WordPress.Security.NonceVerification.Missing
 =======
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 
 		update_option( WP_Job_Manager_Post_Types::PERMALINK_OPTION_NAME, wp_json_encode( $permalink_settings ) );
 

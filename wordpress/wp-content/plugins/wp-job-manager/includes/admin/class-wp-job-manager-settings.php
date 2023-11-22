@@ -160,6 +160,7 @@ class WP_Job_Manager_Settings {
 							'name'       => 'job_manager_hide_filled_positions',
 							'std'        => '0',
 <<<<<<< HEAD
+<<<<<<< HEAD
 							'label'      => __( 'Filled Positions', 'wp-job-manager' ),
 							'cb_label'   => __( 'Hide filled positions', 'wp-job-manager' ),
 							'desc'       => __( 'Filled positions will not display in your archives.', 'wp-job-manager' ),
@@ -168,12 +169,18 @@ class WP_Job_Manager_Settings {
 							'cb_label'   => __( 'Hide filled listings', 'wp-job-manager' ),
 							'desc'       => __( 'Filled job listings will not be included in search results, sitemap and feeds.', 'wp-job-manager' ),
 >>>>>>> 2_5_VoThanhLuan
+=======
+							'label'      => __( 'Filled Listings', 'wp-job-manager' ),
+							'cb_label'   => __( 'Hide filled listings', 'wp-job-manager' ),
+							'desc'       => __( 'Filled job listings will not be included in search results, sitemap and feeds.', 'wp-job-manager' ),
+>>>>>>> 1_LePhuongLoc
 							'type'       => 'checkbox',
 							'attributes' => [],
 						],
 						[
 							'name'       => 'job_manager_hide_expired',
 							'std'        => get_option( 'job_manager_hide_expired_content' ) ? '1' : '0', // back compat.
+<<<<<<< HEAD
 <<<<<<< HEAD
 							'label'      => __( 'Hide Expired Listings', 'wp-job-manager' ),
 							'cb_label'   => __( 'Hide expired listings in job archives/search', 'wp-job-manager' ),
@@ -183,6 +190,11 @@ class WP_Job_Manager_Settings {
 							'cb_label'   => __( 'Hide expired listings', 'wp-job-manager' ),
 							'desc'       => __( 'Expired job listings will not be shown to the users on the job board.', 'wp-job-manager' ),
 >>>>>>> 2_5_VoThanhLuan
+=======
+							'label'      => __( 'Expired Listings', 'wp-job-manager' ),
+							'cb_label'   => __( 'Hide expired listings', 'wp-job-manager' ),
+							'desc'       => __( 'Expired job listings will not be shown to the users on the job board.', 'wp-job-manager' ),
+>>>>>>> 1_LePhuongLoc
 							'type'       => 'checkbox',
 							'attributes' => [],
 						],
@@ -285,10 +297,14 @@ class WP_Job_Manager_Settings {
 							'label'      => __( 'Salary Unit', 'wp-job-manager' ),
 							'cb_label'   => __( 'Enable Job Salary Unit Customization', 'wp-job-manager' ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 							'desc'       => __( 'This lets users add a salary currency when submitting a job.', 'wp-job-manager' ),
 =======
 							'desc'       => __( 'This lets users add a salary unit when submitting a job.', 'wp-job-manager' ),
 >>>>>>> 2_5_VoThanhLuan
+=======
+							'desc'       => __( 'This lets users add a salary unit when submitting a job.', 'wp-job-manager' ),
+>>>>>>> 1_LePhuongLoc
 							'type'       => 'checkbox',
 							'attributes' => [],
 						],
@@ -1090,12 +1106,18 @@ class WP_Job_Manager_Settings {
 	 */
 	protected function input_capabilities( $option, $attributes, $value, $ignored_placeholder ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 1_LePhuongLoc
 		if ( ! is_array( $value ) ) {
 			$value = [ $value ];
 		}
 
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 		$option['options']     = self::get_capabilities_and_roles( $value );
 		$option['placeholder'] = esc_html__( 'Everyone (Public)', 'wp-job-manager' );
 
@@ -1155,16 +1177,21 @@ class WP_Job_Manager_Settings {
 	 * @return array
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	private static function get_capabilities_and_roles( $caps = [] ) {
 =======
 	private static function get_capabilities_and_roles( array $caps = [] ) {
 >>>>>>> 2_5_VoThanhLuan
+=======
+	private static function get_capabilities_and_roles( array $caps = [] ) {
+>>>>>>> 1_LePhuongLoc
 		$capabilities_and_roles = [];
 		$roles                  = get_editable_roles();
 
 		foreach ( $roles as $key => $role ) {
 			$capabilities_and_roles[ $key ] = $role['name'];
 		}
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 		// Go through custom user selected capabilities and add them to the list.
@@ -1175,6 +1202,11 @@ class WP_Job_Manager_Settings {
 		foreach ( $caps as $value ) {
 			if ( ! is_string( $value ) || empty( $value ) || isset( $capabilities_and_roles[ $value ] ) ) {
 >>>>>>> 2_5_VoThanhLuan
+=======
+		// Go through custom user selected capabilities and add them to the list.
+		foreach ( $caps as $value ) {
+			if ( ! is_string( $value ) || empty( $value ) || isset( $capabilities_and_roles[ $value ] ) ) {
+>>>>>>> 1_LePhuongLoc
 				continue;
 			}
 			$capabilities_and_roles[ $value ] = $value;

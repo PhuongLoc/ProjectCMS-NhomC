@@ -37,9 +37,13 @@ class WP_Job_Manager_Addons {
 			self::$instance = new self();
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 2_5_VoThanhLuan
+=======
+
+>>>>>>> 1_LePhuongLoc
 		return self::$instance;
 	}
 
@@ -49,17 +53,45 @@ class WP_Job_Manager_Addons {
 	 * @since  1.30.0
 	 *
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * @param  string $category
+=======
+	 * @param string $category Category slug.
+	 * @param string $search_term Search term.
+>>>>>>> 1_LePhuongLoc
 	 *
 	 * @return array of add-ons.
 	 */
-	private function get_add_ons( $category = null ) {
-		$raw_add_ons = wp_remote_get(
-			add_query_arg( [ [ 'category' => $category ] ], self::WPJM_COM_PRODUCTS_API_BASE_URL . '/search' )
-		);
-		if ( ! is_wp_error( $raw_add_ons ) ) {
-			$add_ons = json_decode( wp_remote_retrieve_body( $raw_add_ons ) )->products;
+	private function get_add_ons( $category = null, $search_term = null ) {
+		$cache_key = 'jm_wpjmcom_add_ons_' . md5( wp_json_encode( compact( 'category', 'search_term' ) ) );
+		$add_ons   = get_transient( $cache_key );
+		if ( false === $add_ons ) {
+			if ( ! empty( $search_term ) && ! empty( $category ) ) {
+				$raw_add_ons = wp_remote_get(
+					add_query_arg(
+						[
+							[
+								'term'     => $search_term,
+								'category' => $category,
+							],
+						],
+						self::WPJM_COM_PRODUCTS_API_BASE_URL . '/search'
+					)
+				);
+			} elseif ( ! empty( $search_term ) ) {
+				$raw_add_ons = wp_remote_get( add_query_arg( [ [ 'term' => $search_term ] ], self::WPJM_COM_PRODUCTS_API_BASE_URL . '/search' ) );
+			} else {
+				$raw_add_ons = wp_remote_get( add_query_arg( [ [ 'category' => $category ] ], self::WPJM_COM_PRODUCTS_API_BASE_URL . '/search' ) );
+			}
+
+			if ( ! is_wp_error( $raw_add_ons ) && ( 200 === wp_remote_retrieve_response_code( $raw_add_ons ) ) ) {
+				$add_ons = json_decode( wp_remote_retrieve_body( $raw_add_ons ) )->products;
+				set_transient( $cache_key, $add_ons, HOUR_IN_SECONDS );
+			} else {
+				$add_ons = [];
+			}
 		}
+<<<<<<< HEAD
 =======
 	 * @param string $category Category slug.
 	 * @param string $search_term Search term.
@@ -97,12 +129,18 @@ class WP_Job_Manager_Addons {
 		}
 
 >>>>>>> 2_5_VoThanhLuan
+=======
+
+>>>>>>> 1_LePhuongLoc
 		return $add_ons;
 	}
 
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 1_LePhuongLoc
 	 * Get product icon for a core add-on.
 	 *
 	 * @param string $slug Add-on plugin slug or product URL.
@@ -151,7 +189,10 @@ class WP_Job_Manager_Addons {
 	}
 
 	/**
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 	 * Get categories for the add-ons screen
 	 *
 	 * @since  1.30.0
@@ -170,15 +211,22 @@ class WP_Job_Manager_Addons {
 			}
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 2_5_VoThanhLuan
+=======
+
+>>>>>>> 1_LePhuongLoc
 		return apply_filters( 'job_manager_add_on_categories', $add_on_categories );
 	}
 
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 1_LePhuongLoc
 	 * Get animated SVG logo.
 	 */
 	public function get_animated_logo() {
@@ -201,13 +249,17 @@ class WP_Job_Manager_Addons {
 	}
 
 	/**
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 	 * Handles output of the reports page in admin.
 	 */
 	public function output() {
 		?>
 		<div class="wrap wp_job_manager wp_job_manager_add_ons_wrap">
 			<nav class="nav-tab-wrapper woo-nav-tab-wrapper">
+<<<<<<< HEAD
 <<<<<<< HEAD
 				<a href="<?php echo esc_url( admin_url( 'edit.php?post_type=job_listing&page=job-manager-addons' ) ); ?>" class="nav-tab
 									<?php
@@ -238,6 +290,20 @@ class WP_Job_Manager_Addons {
 					<?php esc_html_e( 'Marketplace', 'wp-job-manager' ); ?>
 				</a>
 				<?php if ( current_user_can( 'update_plugins' ) ) : ?>
+=======
+				<a href="<?php echo esc_url( admin_url( 'edit.php?post_type=job_listing&page=job-manager-marketplace' ) ); ?>"
+					class="nav-tab
+					<?php
+					// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Input is used safely.
+					if ( ! isset( $_GET['section'] ) || 'helper' !== $_GET['section'] ) {
+						echo ' nav-tab-active';
+					}
+					?>
+				">
+					<?php esc_html_e( 'Marketplace', 'wp-job-manager' ); ?>
+				</a>
+				<?php if ( current_user_can( 'update_plugins' ) ) : ?>
+>>>>>>> 1_LePhuongLoc
 					<a href="<?php echo esc_url( admin_url( 'edit.php?post_type=job_listing&page=job-manager-marketplace&section=helper' ) ); ?>"
 						class="nav-tab
 						<?php
@@ -249,7 +315,10 @@ class WP_Job_Manager_Addons {
 				">
 						<?php esc_html_e( 'Licenses', 'wp-job-manager' ); ?>
 					</a>
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 				<?php endif; ?>
 			</nav>
 			<?php
@@ -259,6 +328,7 @@ class WP_Job_Manager_Addons {
 			} else {
 				// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Input is used safely.
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$category   = isset( $_GET['category'] ) ? sanitize_text_field( wp_unslash( $_GET['category'] ) ) : null;
 				$categories = $this->get_categories();
 				$add_ons    = $this->get_add_ons( $category );
@@ -267,13 +337,22 @@ class WP_Job_Manager_Addons {
 				// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Input is used safely.
 				$search     = isset( $_GET['search'] ) ? sanitize_text_field( wp_unslash( $_GET['search'] ) ) : null;
 				$categories = $this->get_categories();
+=======
+				$category = isset( $_GET['category'] ) ? sanitize_text_field( wp_unslash( $_GET['category'] ) ) : null;
+				// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Input is used safely.
+				$search     = isset( $_GET['search'] ) ? sanitize_text_field( wp_unslash( $_GET['search'] ) ) : null;
+				$categories = $this->get_categories();
+>>>>>>> 1_LePhuongLoc
 
 				if ( $search ) {
 					$add_ons = $this->get_add_ons( null, $search );
 				} else {
 					$add_ons = $this->get_add_ons( $category );
 				}
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 
 				include_once dirname( __FILE__ ) . '/views/html-admin-page-addons.php';
 			}

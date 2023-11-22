@@ -32,13 +32,19 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 1_LePhuongLoc
 	 * Notice ID for promote job modal in the job editor.
 	 */
 	private const JOB_EDITOR_MODAL_NOTICE = 'promote-job-dialog';
 
 	/**
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 	 * The single instance of the class.
 	 *
 	 * @var self
@@ -58,9 +64,13 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 			self::$instance = new self();
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 2_5_VoThanhLuan
+=======
+
+>>>>>>> 1_LePhuongLoc
 		return self::$instance;
 	}
 
@@ -78,9 +88,13 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 		add_action( 'wpjm_admin_notices', [ $this, 'maybe_add_promoted_jobs_notice' ] );
 		add_action( 'wpjm_admin_notices', [ $this, 'maybe_add_trash_notice' ] );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		add_action( 'wpjm_admin_notices', [ $this, 'register_job_editor_modal_notice' ] );
 >>>>>>> 2_5_VoThanhLuan
+=======
+		add_action( 'wpjm_admin_notices', [ $this, 'register_job_editor_modal_notice' ] );
+>>>>>>> 1_LePhuongLoc
 		add_action( 'post_row_actions', [ $this, 'remove_delete_from_promoted_jobs' ], 10, 2 );
 	}
 
@@ -374,8 +388,11 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 		$screen = get_current_screen();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( in_array( $screen->id, [ 'edit-job_listing', 'job_listing' ], true ) ) { // Job listing and job editor.
 =======
+=======
+>>>>>>> 1_LePhuongLoc
 		// Job editor.
 		if ( 'job_listing' === $screen->id && ! \WP_Job_Manager_Admin_Notices::is_dismissed( self::JOB_EDITOR_MODAL_NOTICE, true ) ) {
 
@@ -398,12 +415,16 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 		// Job listing.
 		if ( 'edit-job_listing' === $screen->id ) {
 
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 			?>
 			<template id="promote-job-template">
 				<?php echo $this->get_promote_jobs_template(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</template>
 			<dialog class="wpjm-dialog" id="promote-dialog"></dialog>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<?php
 		}
@@ -413,6 +434,9 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 =======
 
 >>>>>>> 2_5_VoThanhLuan
+=======
+
+>>>>>>> 1_LePhuongLoc
 			<dialog class="wpjm-dialog deactivate-dialog" id="deactivate-dialog">
 				<form class="dialog deactivate-button" method="dialog">
 					<button class="dialog-close" type="submit">X</button>
@@ -516,7 +540,10 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 1_LePhuongLoc
 	 * Register a notice for the job editor promoted jobs modal.
 	 *
 	 * @internal
@@ -542,7 +569,10 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 	}
 
 	/**
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 	 * Remove delete link from promoted jobs.
 	 * The delete action is also canceled as part of
 	 * `WP_Job_Manager_Promoted_Jobs::cancel_promoted_jobs_deletion`.

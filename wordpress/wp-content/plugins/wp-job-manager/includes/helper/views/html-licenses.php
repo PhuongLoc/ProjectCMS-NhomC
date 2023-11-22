@@ -69,10 +69,14 @@ $plugin_section_first = 'plugin-license-section--first';
 		<div class="license-row">
 				<?php // translators: placeholder is the addon name. ?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<img src="<?php echo esc_url( JOB_MANAGER_PLUGIN_URL . '/assets/images/wpjm-logo.png' ); ?>" aria-hidden="true" alt="<?php echo esc_attr( sprintf( __( 'Plugin Icon for %s', 'wp-job-manager' ), $plugin_data['Name'] ) ); ?>" class="plugin-license-icon"/>
 =======
 			<img src="<?php echo esc_url( WP_Job_Manager_Addons::instance()->get_icon( $plugin_data['PluginURI'] ) ?? ( JOB_MANAGER_PLUGIN_URL . '/assets/images/wpjm-logo.png' ) ); ?>" aria-hidden="true" alt="<?php echo esc_attr( sprintf( __( 'Plugin Icon for %s', 'wp-job-manager' ), $plugin_data['Name'] ) ); ?>" class="plugin-license-icon"/>
 >>>>>>> 2_5_VoThanhLuan
+=======
+			<img src="<?php echo esc_url( WP_Job_Manager_Addons::instance()->get_icon( $plugin_data['PluginURI'] ) ?? ( JOB_MANAGER_PLUGIN_URL . '/assets/images/wpjm-logo.png' ) ); ?>" aria-hidden="true" alt="<?php echo esc_attr( sprintf( __( 'Plugin Icon for %s', 'wp-job-manager' ), $plugin_data['Name'] ) ); ?>" class="plugin-license-icon"/>
+>>>>>>> 1_LePhuongLoc
 			<div class="plugin-info">
 				<?php echo esc_html( $plugin_data['Name'] ); ?>
 				<div class="plugin-author">
@@ -138,10 +142,14 @@ $plugin_section_first = 'plugin-license-section--first';
 				<div class="license-row">
 					<?php // translators: placeholder is the addon name. ?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<img src="<?php echo esc_url( JOB_MANAGER_PLUGIN_URL . '/assets/images/wpjm-logo.png' ); ?>" alt="<?php echo esc_attr( sprintf( __( 'Plugin Icon for %s', 'wp-job-manager' ), $plugin_data['Name'] ) ); ?>" class="plugin-license-icon"/>
 =======
 					<img src="<?php echo esc_url( WP_Job_Manager_Addons::instance()->get_icon( $plugin_data['PluginURI'] ) ?? ( JOB_MANAGER_PLUGIN_URL . '/assets/images/wpjm-logo.png' ) ); ?>" alt="<?php echo esc_attr( sprintf( __( 'Plugin Icon for %s', 'wp-job-manager' ), $plugin_data['Name'] ) ); ?>" class="plugin-license-icon"/>
 >>>>>>> 2_5_VoThanhLuan
+=======
+					<img src="<?php echo esc_url( WP_Job_Manager_Addons::instance()->get_icon( $plugin_data['PluginURI'] ) ?? ( JOB_MANAGER_PLUGIN_URL . '/assets/images/wpjm-logo.png' ) ); ?>" alt="<?php echo esc_attr( sprintf( __( 'Plugin Icon for %s', 'wp-job-manager' ), $plugin_data['Name'] ) ); ?>" class="plugin-license-icon"/>
+>>>>>>> 1_LePhuongLoc
 					<div class="plugin-info">
 						<?php echo esc_html( $plugin_data['Name'] ); ?>
 						<div class="plugin-author">

@@ -170,6 +170,7 @@ form.submitting .wpcf7-spinner {
 .wpcf7-reflection > output[hidden] {
 	display: none;
 }
+<<<<<<< HEAD
 
 /*  */
 form.customize-unpreviewable, p{
@@ -211,3 +212,5 @@ form.customize-unpreviewable, p{
 	flex-wrap: wrap;
 	
   }
+=======
+>>>>>>> 1_LePhuongLoc

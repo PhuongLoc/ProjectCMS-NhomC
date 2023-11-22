@@ -510,3 +510,11 @@ ul.config-error li {
 .card .checkboxes li {
 	margin: 0;
 }
+<<<<<<< HEAD
+=======
+
+.wpcf7 .init{
+	display: flex;
+	flex-wrap: wrap;
+}
+>>>>>>> 1_LePhuongLoc

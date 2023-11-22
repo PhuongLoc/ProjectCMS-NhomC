@@ -3,16 +3,21 @@
 msgid ""
 msgstr ""
 <<<<<<< HEAD
+<<<<<<< HEAD
 "Project-Id-Version: WP Job Manager 1.42.0\n"
 =======
 "Project-Id-Version: WP Job Manager 2.1.0\n"
 >>>>>>> 2_5_VoThanhLuan
+=======
+"Project-Id-Version: WP Job Manager 2.1.0\n"
+>>>>>>> 1_LePhuongLoc
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-job-manager/\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+<<<<<<< HEAD
 <<<<<<< HEAD
 "POT-Creation-Date: 2023-10-04T13:26:49+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -22,6 +27,11 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 >>>>>>> 2_5_VoThanhLuan
+=======
+"POT-Creation-Date: 2023-11-17T13:34:50+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+>>>>>>> 1_LePhuongLoc
 "X-Domain: wp-job-manager\n"
 
 #. Plugin Name of the plugin
@@ -76,6 +86,7 @@ msgid "Terms and Conditions is a required field"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-addons.php:96
 #: includes/admin/class-wp-job-manager-admin.php:172
 #: includes/admin/views/html-admin-page-addons.php:12
@@ -88,6 +99,12 @@ msgstr ""
 msgid "WP Job Manager - Applications"
 msgstr ""
 
+=======
+#: includes/admin/class-wp-job-manager-addons-landing-page.php:86
+msgid "WP Job Manager - Applications"
+msgstr ""
+
+>>>>>>> 1_LePhuongLoc
 #: includes/admin/class-wp-job-manager-addons-landing-page.php:89
 #: includes/admin/class-wp-job-manager-addons-landing-page.php:157
 #: includes/admin/class-wp-job-manager-addons-landing-page.php:170
@@ -184,54 +201,76 @@ msgid "Marketplace"
 msgstr ""
 
 #: includes/admin/class-wp-job-manager-addons.php:206
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 #: includes/helper/views/html-licenses.php:14
 msgid "Licenses"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-admin-notices.php:159
+=======
+#: includes/admin/class-wp-job-manager-admin-notices.php:169
+>>>>>>> 1_LePhuongLoc
 msgid "Action failed. Please refresh the page and retry."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-admin-notices.php:163
+#: includes/admin/class-wp-job-manager-admin-notices.php:173
 msgid "You don&#8217;t have permission to do this."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-admin-notices.php:463
-msgid "Update"
+#: includes/admin/class-wp-job-manager-admin-notices.php:446
+msgid "You are nearly ready to start listing jobs with Job Manager"
 msgstr ""
 
-#. translators: %s is the name of the wpjm addon to be updated.
-#: includes/admin/class-wp-job-manager-admin-notices.php:466
-msgid "Good news, reminder to update to the latest version of %s."
+#: includes/admin/class-wp-job-manager-admin-notices.php:451
+#: includes/admin/views/html-admin-notice-core-setup.php:19
+msgid "Run Setup Wizard"
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-admin-notices.php:470
-msgid "View release notes"
+#: includes/admin/class-wp-job-manager-admin-notices.php:457
+msgid "Skip Setup*"
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-admin-notices.php:478
-msgid "Good news, reminder to update these plugins to their latest versions."
-msgstr ""
+#: includes/admin/class-wp-job-manager-admin-notices.php:544
+msgid "Job Manager: Plugin update available"
+msgid_plural "Job Manager: Plugin updates available"
+msgstr[0] ""
+msgstr[1] ""
 
-#: includes/admin/class-wp-job-manager-admin-notices.php:479
-msgid "Update All"
-msgstr ""
+#: includes/admin/class-wp-job-manager-admin-notices.php:545
+msgid "Good news, you can update the following extension to its latest version:"
+msgid_plural "Good news, you can update the following extensions to their latest versions:"
+msgstr[0] ""
+msgstr[1] ""
 
 #. translators: %s is the new version number for the addon.
-#: includes/admin/class-wp-job-manager-admin-notices.php:488
+#: includes/admin/class-wp-job-manager-admin-notices.php:560
 msgid "New Version: %s"
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-admin-notices.php:613
+#: includes/admin/class-wp-job-manager-admin-notices.php:567
+msgid "Update"
+msgid_plural "Update All"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-wp-job-manager-admin-notices.php:651
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/admin/class-wp-job-manager-admin-notices.php:707
 msgid "Listing renewals require the latest version of WC Paid Listings. Please update the plugin to enable the feature."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-admin-notices.php:622
+#: includes/admin/class-wp-job-manager-admin-notices.php:716
 msgid "Listing renewals require the latest version of Simple Paid Listings. Please update the plugin to enable the feature."
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-admin.php:121
 =======
 #: includes/admin/class-wp-job-manager-admin-notices.php:169
@@ -290,6 +329,8 @@ msgstr ""
 msgid "Listing renewals require the latest version of Simple Paid Listings. Please update the plugin to enable the feature."
 msgstr ""
 
+=======
+>>>>>>> 1_LePhuongLoc
 #: includes/admin/class-wp-job-manager-admin-notices.php:739
 msgid "Did you know?"
 msgstr ""
@@ -303,74 +344,106 @@ msgid "View Extensions"
 msgstr ""
 
 #: includes/admin/class-wp-job-manager-admin.php:131
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 msgctxt "user selection"
 msgid "No matches found"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-admin.php:122
 =======
 #: includes/admin/class-wp-job-manager-admin.php:132
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-admin.php:132
+>>>>>>> 1_LePhuongLoc
 msgctxt "user selection"
 msgid "Loading failed"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-admin.php:123
 =======
 #: includes/admin/class-wp-job-manager-admin.php:133
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-admin.php:133
+>>>>>>> 1_LePhuongLoc
 msgctxt "user selection"
 msgid "Please enter 1 or more characters"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-admin.php:124
 =======
 #: includes/admin/class-wp-job-manager-admin.php:134
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-admin.php:134
+>>>>>>> 1_LePhuongLoc
 msgctxt "user selection"
 msgid "Please enter %qty% or more characters"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-admin.php:125
 =======
 #: includes/admin/class-wp-job-manager-admin.php:135
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-admin.php:135
+>>>>>>> 1_LePhuongLoc
 msgctxt "user selection"
 msgid "Loading more results&hellip;"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-admin.php:126
 =======
 #: includes/admin/class-wp-job-manager-admin.php:136
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-admin.php:136
+>>>>>>> 1_LePhuongLoc
 msgctxt "user selection"
 msgid "Searching&hellip;"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-admin.php:129
 =======
 #: includes/admin/class-wp-job-manager-admin.php:139
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-admin.php:139
+>>>>>>> 1_LePhuongLoc
 msgctxt "job promotion"
 msgid "Promote your job"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-admin.php:130
 =======
 #: includes/admin/class-wp-job-manager-admin.php:140
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-admin.php:140
+>>>>>>> 1_LePhuongLoc
 msgctxt "job promotion"
 msgid "Learn More"
 msgstr ""
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-admin.php:169
 msgid "Settings"
@@ -398,6 +471,26 @@ msgstr ""
 #: includes/admin/views/html-admin-page-addons.php:12
 msgid "WP Job Manager Marketplace"
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-admin.php:141
+msgctxt "job promotion"
+msgid "Don't show this again"
+msgstr ""
+
+#: includes/admin/class-wp-job-manager-admin.php:181
+#: includes/admin/class-wp-job-manager-settings.php:138
+#: includes/class-wp-job-manager-post-types.php:437
+msgid "Job Listings"
+msgstr ""
+
+#: includes/admin/class-wp-job-manager-admin.php:182
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-wp-job-manager-admin.php:185
+#: includes/admin/views/html-admin-page-addons.php:12
+msgid "WP Job Manager Marketplace"
+>>>>>>> 1_LePhuongLoc
 msgstr ""
 
 #. translators: Placeholder (%s) is the plural name of the job listings post type.
@@ -479,9 +572,13 @@ msgid "%1$s updated. <a href=\"%2$s\">View</a>"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #. translators: %1$s is the singular name of the job listing post type; %2$s is the URL to view the listing.
 >>>>>>> 2_5_VoThanhLuan
+=======
+#. translators: %1$s is the singular name of the job listing post type; %2$s is the URL to view the listing.
+>>>>>>> 1_LePhuongLoc
 #: includes/admin/class-wp-job-manager-cpt.php:460
 msgid "Custom field updated."
 msgstr ""
@@ -555,9 +652,13 @@ msgstr ""
 #: includes/admin/class-wp-job-manager-cpt.php:505
 #: includes/admin/class-wp-job-manager-settings.php:189
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #: includes/class-wp-job-manager-post-types.php:187
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/class-wp-job-manager-post-types.php:187
+>>>>>>> 1_LePhuongLoc
 msgid "Categories"
 msgstr ""
 
@@ -571,6 +672,7 @@ msgid "Filled?"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-cpt.php:553
 msgid "Approve"
 msgstr ""
@@ -583,17 +685,29 @@ msgstr ""
 
 #: includes/admin/class-wp-job-manager-cpt.php:563
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-cpt.php:555
+msgid "Approve"
+msgstr ""
+
+#: includes/admin/class-wp-job-manager-cpt.php:563
+>>>>>>> 1_LePhuongLoc
 #: includes/admin/class-wp-job-manager-writepanels.php:244
 #: includes/admin/class-wp-job-manager-writepanels.php:294
 msgid "View"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-cpt.php:568
 =======
 #. translators: Placeholder %s is the singular label of the job listing post type.
 #: includes/admin/class-wp-job-manager-cpt.php:570
 >>>>>>> 2_5_VoThanhLuan
+=======
+#. translators: Placeholder %s is the singular label of the job listing post type.
+#: includes/admin/class-wp-job-manager-cpt.php:570
+>>>>>>> 1_LePhuongLoc
 #: includes/class-wp-job-manager-post-types.php:340
 #: includes/class-wp-job-manager-shortcodes.php:450
 #: includes/class-wp-job-manager-shortcodes.php:494
@@ -601,15 +715,20 @@ msgid "Edit"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-cpt.php:575
 =======
 #: includes/admin/class-wp-job-manager-cpt.php:577
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-cpt.php:577
+>>>>>>> 1_LePhuongLoc
 #: includes/class-wp-job-manager-shortcodes.php:509
 msgid "Delete"
 msgstr ""
 
 #. translators: %d is the post ID for the job listing.
+<<<<<<< HEAD
 <<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-cpt.php:611
 msgid "ID: %d"
@@ -623,24 +742,39 @@ msgstr ""
 
 #: includes/admin/class-wp-job-manager-cpt.php:636
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-cpt.php:613
+msgid "ID: %d"
+msgstr ""
+
+#: includes/admin/class-wp-job-manager-cpt.php:636
+>>>>>>> 1_LePhuongLoc
 msgid "Show more details"
 msgstr ""
 
 #. translators: %s placeholder is the username of the user.
 <<<<<<< HEAD
-#: includes/admin/class-wp-job-manager-cpt.php:664
-=======
-#: includes/admin/class-wp-job-manager-cpt.php:666
->>>>>>> 2_5_VoThanhLuan
-msgid "by a guest"
-msgstr ""
-
-#. translators: %s placeholder is the username of the user.
 <<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-cpt.php:664
 =======
 #: includes/admin/class-wp-job-manager-cpt.php:666
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-cpt.php:666
+>>>>>>> 1_LePhuongLoc
+msgid "by a guest"
+msgstr ""
+
+#. translators: %s placeholder is the username of the user.
+<<<<<<< HEAD
+<<<<<<< HEAD
+#: includes/admin/class-wp-job-manager-cpt.php:664
+=======
+#: includes/admin/class-wp-job-manager-cpt.php:666
+>>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-cpt.php:666
+>>>>>>> 1_LePhuongLoc
 msgid "by %s"
 msgstr ""
 
@@ -679,28 +813,35 @@ msgid "job-type"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:78
 #: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:264
 #: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:267
+=======
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:85
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:271
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:274
+>>>>>>> 1_LePhuongLoc
 msgid "Promote"
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:91
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:98
 msgid "No job listing ID provided for deactivation of the promotion."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:95
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:102
 msgid "You do not have permission to deactivate the promotion for this job listing."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:136
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:143
 msgid "Your job is promoted and being exposed through API but it's not published in your site. You can fix it by publishing it again or deactivating the promotion."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:139
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:146
 msgid "This job has been promoted to external job boards."
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:142
 #: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:256
 =======
@@ -729,72 +870,81 @@ msgstr ""
 #: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:149
 #: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:263
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:149
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:263
+>>>>>>> 1_LePhuongLoc
 msgid "Promoted"
 msgstr ""
 
 #. translators: Placeholder (%s) is the name of the job listing affected.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:170
+=======
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:177
+>>>>>>> 1_LePhuongLoc
 msgid "Promotion for %s deactivated"
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:185
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:192
 msgid "No job listing ID provided for promotion."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:192
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:199
 msgid "You do not have permission to edit this job listing."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:196
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:203
 msgid "You do not have permission to promote this job listing."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:258
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:265
 msgid "Manage"
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:260
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:387
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:267
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:411
 msgid "Deactivate"
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:266
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:273
 msgid "The job needs to be published in order to be promoted."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:376
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:400
 msgid "Are you sure you want to deactivate promotion for this job?"
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:379
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:403
 msgid "If you still have time until the promotion expires, this time will be lost and the promotion of the job will be canceled."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:384
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:408
 msgid "Cancel"
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:413
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:437
 msgid "Congratulations! Your first job has been successfully promoted."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:414
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:438
 msgid "To manage your promoted job, use the <em>Edit</em> and <em>Deactivate</em> links beside the job listing under the <strong>Promote</strong> column. Unpublishing a job listing will not deactivate the promotion."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:453
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:477
 msgid "You have promoted jobs in the trash."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:454
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:478
 msgid "Trashed jobs are not be available to your applicants. Deactivate the promotion or publish the job again to fix this."
 msgstr ""
 
-#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:463
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:487
 msgid "Check the trash"
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:486
 =======
 #: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:177
@@ -860,6 +1010,9 @@ msgstr ""
 
 #: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:535
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-promoted-jobs-admin.php:535
+>>>>>>> 1_LePhuongLoc
 msgid "You need to deactivate the promotion before deleting the job."
 msgstr ""
 
@@ -909,6 +1062,7 @@ msgid "If checked, when the plugin is uninstalled, job listings will be permanen
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-settings.php:138
 #: includes/class-wp-job-manager-post-types.php:334
 #: includes/class-wp-job-manager-post-types.php:437
@@ -917,6 +1071,8 @@ msgstr ""
 
 =======
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 #: includes/admin/class-wp-job-manager-settings.php:144
 msgid "Listings Per Page"
 msgstr ""
@@ -943,26 +1099,31 @@ msgstr ""
 
 #: includes/admin/class-wp-job-manager-settings.php:162
 <<<<<<< HEAD
+<<<<<<< HEAD
 msgid "Filled Positions"
+=======
+msgid "Filled Listings"
+>>>>>>> 1_LePhuongLoc
 msgstr ""
 
 #: includes/admin/class-wp-job-manager-settings.php:163
-msgid "Hide filled positions"
+msgid "Hide filled listings"
 msgstr ""
 
 #: includes/admin/class-wp-job-manager-settings.php:164
-msgid "Filled positions will not display in your archives."
+msgid "Filled job listings will not be included in search results, sitemap and feeds."
 msgstr ""
 
 #: includes/admin/class-wp-job-manager-settings.php:171
-msgid "Hide Expired Listings"
+msgid "Expired Listings"
 msgstr ""
 
 #: includes/admin/class-wp-job-manager-settings.php:172
-msgid "Hide expired listings in job archives/search"
+msgid "Hide expired listings"
 msgstr ""
 
 #: includes/admin/class-wp-job-manager-settings.php:173
+<<<<<<< HEAD
 msgid "Expired job listings will not be searchable."
 =======
 msgid "Filled Listings"
@@ -987,6 +1148,9 @@ msgstr ""
 #: includes/admin/class-wp-job-manager-settings.php:173
 msgid "Expired job listings will not be shown to the users on the job board."
 >>>>>>> 2_5_VoThanhLuan
+=======
+msgid "Expired job listings will not be shown to the users on the job board."
+>>>>>>> 1_LePhuongLoc
 msgstr ""
 
 #: includes/admin/class-wp-job-manager-settings.php:180
@@ -1039,9 +1203,13 @@ msgstr ""
 
 #: includes/admin/class-wp-job-manager-settings.php:218
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #: includes/class-wp-job-manager-post-types.php:250
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/class-wp-job-manager-post-types.php:250
+>>>>>>> 1_LePhuongLoc
 msgid "Types"
 msgstr ""
 
@@ -1105,9 +1273,12 @@ msgstr ""
 
 #: includes/admin/class-wp-job-manager-settings.php:256
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-settings.php:275
 =======
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 msgid "This lets users add a salary currency when submitting a job."
 msgstr ""
 
@@ -1140,12 +1311,18 @@ msgid "Enable Job Salary Unit Customization"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 1_LePhuongLoc
 #: includes/admin/class-wp-job-manager-settings.php:275
 msgid "This lets users add a salary unit when submitting a job."
 msgstr ""
 
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 #: includes/admin/class-wp-job-manager-settings.php:282
 msgid "Default Salary Unit"
 msgstr ""
@@ -1459,10 +1636,14 @@ msgid "Select a page&hellip;"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/class-wp-job-manager-settings.php:1077
 =======
 #: includes/admin/class-wp-job-manager-settings.php:1081
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/admin/class-wp-job-manager-settings.php:1081
+>>>>>>> 1_LePhuongLoc
 msgid "Everyone (Public)"
 msgstr ""
 
@@ -1533,20 +1714,26 @@ msgid "You are nearly ready to start listing jobs with <strong>WP Job Manager</s
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/views/html-admin-notice-core-setup.php:19
 msgid "Run Setup Wizard"
 msgstr ""
 
 =======
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 #: includes/admin/views/html-admin-notice-core-setup.php:20
 msgid "Skip Setup"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/admin/views/html-admin-page-addons.php:33
 msgid "No add-ons were found."
 =======
+=======
+>>>>>>> 1_LePhuongLoc
 #: includes/admin/views/html-admin-page-addons.php:38
 #: includes/admin/views/html-admin-page-addons.php:39
 #: includes/helper/views/html-licenses.php:54
@@ -1572,7 +1759,10 @@ msgstr ""
 
 #: includes/admin/views/html-admin-page-addons.php:95
 msgid "More details"
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 msgstr ""
 
 #: includes/admin/views/html-admin-setup-header.php:13
@@ -1763,9 +1953,13 @@ msgid "You must be logged in to upload files using this method."
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #. translators: Placeholder %s is the singular label of the job listing post type.
 >>>>>>> 2_5_VoThanhLuan
+=======
+#. translators: Placeholder %s is the singular label of the job listing post type.
+>>>>>>> 1_LePhuongLoc
 #: includes/class-wp-job-manager-data-exporter.php:51
 #: includes/class-wp-job-manager-post-types.php:357
 msgid "Company Logo"
@@ -1979,13 +2173,19 @@ msgid "Jobs"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 1_LePhuongLoc
 #: includes/class-wp-job-manager-post-types.php:334
 msgid "Job Manager"
 msgstr ""
 
 #. translators: Placeholder %s is the plural label of the job listing post type.
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 #: includes/class-wp-job-manager-post-types.php:337
 msgid "Add New"
 msgstr ""
@@ -2200,9 +2400,13 @@ msgid "Missing submission page."
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #. translators: Placeholder %s is the plural label for the job listing post type.
 >>>>>>> 2_5_VoThanhLuan
+=======
+#. translators: Placeholder %s is the plural label for the job listing post type.
+>>>>>>> 1_LePhuongLoc
 #: includes/class-wp-job-manager-shortcodes.php:401
 #: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:36
 #: includes/widgets/class-wp-job-manager-widget-featured-jobs.php:52
@@ -2251,6 +2455,7 @@ msgstr ""
 #: includes/class-wp-job-manager-usage-tracking.php:230
 msgid ""
 <<<<<<< HEAD
+<<<<<<< HEAD
 "We'd love if you helped us make WP Job Manager better by allowing us to collect\n"
 "\t\t\t\t<a target=\"_blank\" href=\"%s\">usage tracking data</a>. No sensitive information is\n"
 "\t\t\t\tcollected, and you can opt out at any time."
@@ -2259,6 +2464,11 @@ msgid ""
 "\t\t\t\t<a target=\"_blank\" href=\"%s\">usage tracking data</a>.</p><p>No sensitive information is\n"
 "\t\t\t\tcollected, and you can opt out at any time.</p>"
 >>>>>>> 2_5_VoThanhLuan
+=======
+"<p>We'd love if you helped us make WP Job Manager better by allowing us to collect\n"
+"\t\t\t\t<a target=\"_blank\" href=\"%s\">usage tracking data</a>.</p><p>No sensitive information is\n"
+"\t\t\t\tcollected, and you can opt out at any time.</p>"
+>>>>>>> 1_LePhuongLoc
 msgstr ""
 
 #. translators: the href tag contains the URL for the page telling users what data WPJM tracks.
@@ -2532,54 +2742,75 @@ msgid "Renew Listing &rarr;"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/helper/class-wp-job-manager-helper.php:356
 =======
 #: includes/helper/class-wp-job-manager-helper.php:362
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/helper/class-wp-job-manager-helper.php:362
+>>>>>>> 1_LePhuongLoc
 msgid "your WP Job Manager plugin"
 msgstr ""
 
 #. translators: First placeholder is the plugin name, second placeholder is the My Account URL.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/helper/class-wp-job-manager-helper.php:382
 =======
 #: includes/helper/class-wp-job-manager-helper.php:388
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/helper/class-wp-job-manager-helper.php:388
+>>>>>>> 1_LePhuongLoc
 msgid "<strong>Error:</strong> The license for <strong>%1$s</strong> is not activated on this website and has been removed. Manage your activations on your <a href=\"%2$s\" rel=\"noopener noreferrer\" target=\"_blank\">My Account page</a>."
 msgstr ""
 
 #. translators: First placeholder is the plugin name; second placeholder is the URL to purchase the plugin.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/helper/class-wp-job-manager-helper.php:387
 =======
 #: includes/helper/class-wp-job-manager-helper.php:393
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/helper/class-wp-job-manager-helper.php:393
+>>>>>>> 1_LePhuongLoc
 msgid "<strong>Error:</strong> The license for <strong>%1$s</strong> is not valid and has been removed. <a href=\"%2$s\" rel=\"noopener noreferrer\" target=\"_blank\">Purchase a new license</a> to receive updates and support."
 msgstr ""
 
 #. translators: First placeholder is the plugin name, second placeholder is the My Account URL.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/helper/class-wp-job-manager-helper.php:392
 =======
 #: includes/helper/class-wp-job-manager-helper.php:398
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/helper/class-wp-job-manager-helper.php:398
+>>>>>>> 1_LePhuongLoc
 msgid "<strong>Error:</strong> The license for <strong>%1$s</strong> has expired. You must <a href=\"%2$s\" rel=\"noopener noreferrer\" target=\"_blank\">renew your license</a> to receive updates and support."
 msgstr ""
 
 #. translators: First placeholder is the plugin name, second placeholder is the My Account URL.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/helper/class-wp-job-manager-helper.php:395
+=======
+#: includes/helper/class-wp-job-manager-helper.php:401
+>>>>>>> 1_LePhuongLoc
 msgid "<strong>Error:</strong> The license for <strong>%1$s</strong> is expiring soon. Please <a href=\"%2$s\" rel=\"noopener noreferrer\" target=\"_blank\">renew your license</a> to continue receiving updates and support."
 msgstr ""
 
-#: includes/helper/class-wp-job-manager-helper.php:477
+#: includes/helper/class-wp-job-manager-helper.php:484
 msgid "Manage License (Requires Attention)"
 msgstr ""
 
-#: includes/helper/class-wp-job-manager-helper.php:480
+#: includes/helper/class-wp-job-manager-helper.php:487
 msgid "Manage License"
 msgstr ""
 
+<<<<<<< HEAD
 #: includes/helper/class-wp-job-manager-helper.php:483
 =======
 #: includes/helper/class-wp-job-manager-helper.php:401
@@ -2596,6 +2827,9 @@ msgstr ""
 
 #: includes/helper/class-wp-job-manager-helper.php:490
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/helper/class-wp-job-manager-helper.php:490
+>>>>>>> 1_LePhuongLoc
 #: includes/helper/views/html-licenses.php:44
 #: includes/helper/views/html-licenses.php:170
 #: tests/php/tests/includes/helper/test_class.wp-job-manager-helper.php:155
@@ -2603,47 +2837,58 @@ msgid "Activate License"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/helper/class-wp-job-manager-helper.php:789
+=======
+#: includes/helper/class-wp-job-manager-helper.php:804
+>>>>>>> 1_LePhuongLoc
 msgid "Please enter a valid license key in order to activate this plugin's license."
 msgstr ""
 
-#: includes/helper/class-wp-job-manager-helper.php:819
+#: includes/helper/class-wp-job-manager-helper.php:834
 msgid "Please enter a valid license key in order to activate the licenses of the plugins."
 msgstr ""
 
-#: includes/helper/class-wp-job-manager-helper.php:846
+#: includes/helper/class-wp-job-manager-helper.php:863
 msgid "There was an error activating your license key. Please try again later."
 msgstr ""
 
-#: includes/helper/class-wp-job-manager-helper.php:901
+#: includes/helper/class-wp-job-manager-helper.php:919
 msgid "license is not active."
 msgstr ""
 
-#: includes/helper/class-wp-job-manager-helper.php:913
+#: includes/helper/class-wp-job-manager-helper.php:932
 msgid "There was an error while deactivating the plugin."
 msgstr ""
 
-#: includes/helper/class-wp-job-manager-helper.php:925
+#: includes/helper/class-wp-job-manager-helper.php:945
 msgid "Plugin license has been deactivated."
 msgstr ""
 
-#: includes/helper/class-wp-job-manager-helper.php:1020
+#: includes/helper/class-wp-job-manager-helper.php:1042
 msgid "Connection failed to the License Key API server - possible server issue."
 msgstr ""
 
-#: includes/helper/class-wp-job-manager-helper.php:1029
+#: includes/helper/class-wp-job-manager-helper.php:1051
 msgid "Plugin license has been activated."
 msgstr ""
 
-#: includes/helper/class-wp-job-manager-helper.php:1033
+#: includes/helper/class-wp-job-manager-helper.php:1055
 msgid "An unknown error occurred while attempting to activate the license"
 msgstr ""
 
-#. translators: %1$s is the URL to the license key page, %2$s is the plugin name.
-#: includes/helper/class-wp-job-manager-helper.php:1071
-msgid "<a href=\"%1$s\">Please enter your license key</a> to get updates for \"%2$s\"."
+#: includes/helper/class-wp-job-manager-helper.php:1093
+msgid "Job Manager: License required"
+msgid_plural "Job Manager: Licenses required"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %1$s is the URL to the license key page.
+#: includes/helper/class-wp-job-manager-helper.php:1097
+msgid "<a href=\"%1$s\">Please add or review your license keys</a> to get updates for the following extensions:"
 msgstr ""
 
+<<<<<<< HEAD
 #. translators: %1$s is the plugin name, %2$s is the URL to the license key page.
 #: includes/helper/class-wp-job-manager-helper.php:1103
 msgid "There is a problem with the license for \"%1$s\". Please <a href=\"%2$s\">manage the license</a> to check for a solution and continue receiving updates."
@@ -2695,13 +2940,18 @@ msgstr[1] ""
 msgid "<a href=\"%1$s\">Please add or review your license keys</a> to get updates for the following extensions:"
 msgstr ""
 
+=======
+>>>>>>> 1_LePhuongLoc
 #: includes/helper/class-wp-job-manager-helper.php:1104
 msgid "Manage Licenses"
 msgstr ""
 
 #: includes/helper/class-wp-job-manager-helper.php:1109
 msgid "My Account"
+<<<<<<< HEAD
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 msgstr ""
 
 #: includes/helper/class-wp-job-manager-site-trust-token.php:67
@@ -2729,6 +2979,7 @@ msgid "ENTER YOUR LICENSE KEY"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/helper/views/html-licenses.php:54
 #: includes/helper/views/html-licenses.php:55
 msgid "Search"
@@ -2736,6 +2987,8 @@ msgstr ""
 
 =======
 >>>>>>> 2_5_VoThanhLuan
+=======
+>>>>>>> 1_LePhuongLoc
 #. translators: placeholder is the number of active addons, which will never be zero.
 #: includes/helper/views/html-licenses.php:62
 msgid "Active (%d)"
@@ -2775,6 +3028,7 @@ msgid "No plugins are activated that have licenses managed by WP Job Manager."
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: includes/promoted-jobs/class-wp-job-manager-promoted-jobs-api.php:265
 #: includes/promoted-jobs/class-wp-job-manager-promoted-jobs-api.php:290
 msgid "The promoted job was not found"
@@ -2789,6 +3043,14 @@ msgstr ""
 
 #: includes/promoted-jobs/class-wp-job-manager-promoted-jobs-api.php:278
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: includes/promoted-jobs/class-wp-job-manager-promoted-jobs-api.php:249
+#: includes/promoted-jobs/class-wp-job-manager-promoted-jobs-api.php:274
+msgid "The promoted job was not found"
+msgstr ""
+
+#: includes/promoted-jobs/class-wp-job-manager-promoted-jobs-api.php:278
+>>>>>>> 1_LePhuongLoc
 msgid "Sorry, you are not allowed to view this job."
 msgstr ""
 
@@ -3160,9 +3422,13 @@ msgid "%s submitted successfully. Your listing will be visible once approved."
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #. translators: %1$s is the URL to view the listing; %2$s is
 >>>>>>> 2_5_VoThanhLuan
+=======
+#. translators: %1$s is the URL to view the listing; %2$s is
+>>>>>>> 1_LePhuongLoc
 #: templates/job-submitted.php:61
 msgid "  <a href=\"%1$s\"> View your %2$s</a>"
 msgstr ""
@@ -3299,26 +3565,31 @@ msgid "Application via %1$s listing on %2$s"
 msgstr ""
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-job-manager-template.php:707
+=======
+#: wp-job-manager-template.php:709
+>>>>>>> 1_LePhuongLoc
 msgid "Your email"
 msgstr ""
 
-#: wp-job-manager-template.php:708
+#: wp-job-manager-template.php:710
 msgid "you@yourdomain.com"
 msgstr ""
 
-#: wp-job-manager-template.php:716
+#: wp-job-manager-template.php:718
 msgid "Username"
 msgstr ""
 
-#: wp-job-manager-template.php:725
+#: wp-job-manager-template.php:727
 msgid "Password"
 msgstr ""
 
-#: wp-job-manager-template.php:735
+#: wp-job-manager-template.php:737
 msgid "Verify Password"
 msgstr ""
 
+<<<<<<< HEAD
 #: wp-job-manager-template.php:762
 =======
 #: wp-job-manager-template.php:709
@@ -3343,20 +3614,29 @@ msgstr ""
 
 #: wp-job-manager-template.php:764
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: wp-job-manager-template.php:764
+>>>>>>> 1_LePhuongLoc
 msgid "Posted on "
 msgstr ""
 
 #. translators: Placeholder %s is the relative, human readable time since the job listing was posted.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-job-manager-template.php:765
 #: wp-job-manager-template.php:786
+=======
+#: wp-job-manager-template.php:767
+#: wp-job-manager-template.php:788
+>>>>>>> 1_LePhuongLoc
 msgid "Posted %s ago"
 msgstr ""
 
-#: wp-job-manager-template.php:801
+#: wp-job-manager-template.php:803
 msgid "Remote"
 msgstr ""
 
+<<<<<<< HEAD
 #: wp-job-manager-template.php:825
 =======
 #: wp-job-manager-template.php:767
@@ -3370,5 +3650,8 @@ msgstr ""
 
 #: wp-job-manager-template.php:827
 >>>>>>> 2_5_VoThanhLuan
+=======
+#: wp-job-manager-template.php:827
+>>>>>>> 1_LePhuongLoc
 msgid "Anywhere"
 msgstr ""

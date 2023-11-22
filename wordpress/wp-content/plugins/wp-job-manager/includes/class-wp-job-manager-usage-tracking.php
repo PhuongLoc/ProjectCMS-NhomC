@@ -229,6 +229,7 @@ class WP_Job_Manager_Usage_Tracking extends WP_Job_Manager_Usage_Tracking_Base {
 			// translators: Placeholder %s is a URL to the document on wpjobmanager.com with info on usage tracking.
 			__(
 <<<<<<< HEAD
+<<<<<<< HEAD
 				'We\'d love if you helped us make WP Job Manager better by allowing us to collect
 				<a target="_blank" href="%s">usage tracking data</a>. No sensitive information is
 				collected, and you can opt out at any time.',
@@ -237,6 +238,11 @@ class WP_Job_Manager_Usage_Tracking extends WP_Job_Manager_Usage_Tracking_Base {
 				<a target="_blank" href="%s">usage tracking data</a>.</p><p>No sensitive information is
 				collected, and you can opt out at any time.</p>',
 >>>>>>> 2_5_VoThanhLuan
+=======
+				'<p>We\'d love if you helped us make WP Job Manager better by allowing us to collect
+				<a target="_blank" href="%s">usage tracking data</a>.</p><p>No sensitive information is
+				collected, and you can opt out at any time.</p>',
+>>>>>>> 1_LePhuongLoc
 				'wp-job-manager'
 			),
 			self::WPJM_TRACKING_INFO_URL

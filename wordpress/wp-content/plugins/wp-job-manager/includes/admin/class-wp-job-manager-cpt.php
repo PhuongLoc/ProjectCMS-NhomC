@@ -548,10 +548,15 @@ class WP_Job_Manager_CPT {
 			unset( $actions['trash'] );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 			$admin_actions = [];
 
 >>>>>>> 2_5_VoThanhLuan
+=======
+			$admin_actions = [];
+
+>>>>>>> 1_LePhuongLoc
 			if ( in_array( $post->post_status, [ 'pending', 'pending_payment' ], true ) && current_user_can( 'publish_post', $post->ID ) ) {
 				$admin_actions['approve'] = [
 					'action' => 'approved',
