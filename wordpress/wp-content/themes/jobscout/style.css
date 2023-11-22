@@ -1120,8 +1120,8 @@ body.custom-background .site {
 
 a.btn {
   display: inline-block;
-  background: #2ace5e;
-  border: 1px solid #2ace5e;
+  background: #ea751e;
+  border: 1px solid #ea751e;
   color: #fff;
   font-weight: 700;
 
@@ -1133,7 +1133,7 @@ a.btn {
 a.btn:hover,
 a.btn:focus {
   background: none;
-  color: #2ace5e;
+  color: #ea751e;
 }
 
 a.btn:focus {
@@ -1203,7 +1203,7 @@ figure.post-thumbnail {
 }
 
 .entry-meta>span a:hover {
-  color: #2ace5e;
+  color: #ea751e;
 }
 
 .entry-title a {
@@ -1212,7 +1212,7 @@ figure.post-thumbnail {
 }
 
 .entry-title a:hover {
-  color: #2ace5e;
+  color: #ea751e;
 }
 
 .entry-footer a+.edit-link {
@@ -2038,7 +2038,7 @@ HEADER T SECTION
 .secondary-nav ul li.current_page_item>a,
 .secondary-nav ul li.current-menu-ancestor>a,
 .secondary-nav ul li.current_page_ancestor>a {
-  color: #2ace5e;
+  color: #000000;
 }
 
 .secondary-nav ul.nav-menu>li:first-child>a {
@@ -2172,7 +2172,7 @@ body.home:not(.banner-enabled) .site-header {
 }
 
 .site-branding .site-title a {
-  color: #2ace5e;
+  color: #ea751e;
 }
 
 .site-branding .site-description {
@@ -2220,7 +2220,7 @@ body.home:not(.banner-enabled) .site-header {
 .main-navigation ul li.current_page_item>a,
 .main-navigation ul li.current-menu-ancestor>a,
 .main-navigation ul li.current_page_ancestor>a {
-  color: #2ace5e;
+  color: #ea751e;
 }
 
 .main-navigation ul li ul {
@@ -3108,7 +3108,7 @@ SITE FOOTER SECTION
 }
 
 .footer-b {
-  background: #212121;
+  background: #231815;
   padding: 15px 0;
   font-size: 0.888em;
   color: rgba(255, 255, 255, 0.8);
@@ -3118,10 +3118,11 @@ SITE FOOTER SECTION
 
 .footer-b a {
   color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
 }
 
 .footer-b a:hover {
-  color: #2ace5e;
+  color: #ea751e;
 }
 
 .footer-b .privacy-block {
@@ -4409,11 +4410,11 @@ JOB OVERVIEW
 .job-overview .overview-wrap a.btn+a.btn {
   margin-top: 10px;
   background: none;
-  color: #2ace5e;
+  color: #ea751e;
 }
 
 .job-overview .overview-wrap a.btn+a.btn:hover {
-  background: #2ace5e;
+  background: #ea751e;
   color: #fff;
 }
 
@@ -4708,8 +4709,8 @@ WIDGET CALL TO ACTION
 
 .widget_raratheme_companion_cta_widget a.btn-cta {
   display: inline-block;
-  background: #2ace5e;
-  border: 1px solid #2ace5e;
+  background: #ea751e;
+  border: 1px solid #ea751e;
   color: #fff;
   font-weight: 700;
   margin: 5px;
@@ -4720,7 +4721,7 @@ WIDGET CALL TO ACTION
 
 .widget_raratheme_companion_cta_widget a.btn-cta:hover {
   background: none;
-  color: #2ace5e;
+  color: #ea751e;
 }
 
 .widget_raratheme_companion_cta_widget .text a.btn-cta {
@@ -4769,19 +4770,19 @@ WIDGET ICON TEXT
 
 a.btn-readmore {
   display: inline-block;
-  background: #2ace5e;
+  background: #ea751e;
   color: #fff;
   font-weight: 800;
   font-size: 0.778em;
   padding: 13px 18px;
   border-radius: 5px;
   margin-top: 20px;
-  border: 1px solid #2acf5f;
+  border: 1px solid #ea751e;
 }
 
 a.btn-readmore:hover {
   background: none;
-  color: #2acf5f;
+  color: #ea751e;
 }
 
 .widget_rrtc_icon_text_widget .icon-holder {
@@ -5554,21 +5555,20 @@ PAGE TEMPLATE LOGIN REGISTER
 JOB LISTING PAGE
 ==========================*/
 .site-main .entry-content div.job_listings div.job_listings article {
+  width: 47%;
   background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
-  margin-bottom: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 2.5%;
   border-radius: 5px;
-  padding: 30px;
+  padding: 20px;
   position: relative;
   display: flex;
-  flex: 1;
   flex-wrap: wrap;
   overflow: hidden;
-  align-items: flex-start;
 }
 
 .site-main .entry-content div.job_listings div.job_listings article .company-logo {
-  width: 100px;
+  width: 90px;
   margin: 0;
   background: #eeeeee;
 }
@@ -6169,7 +6169,7 @@ RESPONSIVE STYLESHEET
   }
 
   .header-main .main-navigation .toggle-btn:hover .toggle-bar {
-    background: #2ace5e;
+    background: #ea751e;
   }
 
   .responsive-nav {
@@ -6276,7 +6276,7 @@ RESPONSIVE STYLESHEET
   }
 
   .responsive-nav .right-block a.btn-link:hover {
-    background: #2ace5e;
+    background: #ea751e;
   }
 
   .responsive-nav .secondary-nav {
@@ -6350,7 +6350,7 @@ RESPONSIVE STYLESHEET
   .responsive-nav .secondary-nav ul li.current_page_item>a,
   .responsive-nav .secondary-nav ul li.current-menu-ancestor>a,
   .responsive-nav .secondary-nav ul li.current_page_ancestor>a {
-    color: #2ace5e;
+    color: #ea751e;
   }
 
   .responsive-nav .main-navigation ul li ul,
@@ -7527,7 +7527,7 @@ RESPONSIVE STYLESHEET
 
 .site-footer .widget_raratheme_author_bio .readmore:hover {
   background: #121212;
-  color: #2ace5e;
+  color: #ea751e;
 }
 
 .site-footer .widget_raratheme_author_bio .author-socicons li {
@@ -7813,7 +7813,7 @@ RESPONSIVE STYLESHEET
 .comment-content a,
 .widget .textwidget a {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .entry-content a:hover,
@@ -8158,4 +8158,31 @@ RESPONSIVE STYLESHEET
 
 .wp-block-social-links {
   flex-wrap: wrap !important;
+}
+
+/* header */
+/* header nav */
+.topnav {
+  overflow: hidden;
+  /* background-color: #f1f1f1; */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid red;
 }

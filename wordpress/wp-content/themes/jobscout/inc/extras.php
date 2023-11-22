@@ -174,15 +174,17 @@ function jobscout_primary_nagivation(){
             <span class="toggle-bar"></span>
             <span class="toggle-bar"></span>
         </button>
-            <?php
-    			wp_nav_menu( array(
-    				'theme_location' => 'primary',
-    				'menu_id'        => 'primary-menu',
+        <div class="topnav">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'primary',
+                    'menu_id'        => 'primary-menu',
                     'menu_class'     => 'nav-menu',
                     'container'      => false,
                     'fallback_cb'    => 'jobscout_primary_menu_fallback',
-    			) );
-    		?>
+                ));
+                ?>
+            </div>
     	</nav><!-- #site-navigation -->
         <?php if( $post_job_label || $post_job_url ){ ?>
             <div class="btn-wrap">
