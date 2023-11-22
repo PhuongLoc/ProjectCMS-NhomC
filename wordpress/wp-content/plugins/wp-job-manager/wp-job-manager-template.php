@@ -418,6 +418,11 @@ function wpjm_get_job_listing_structured_data( $post = null ) {
 		}
 	}
 
+<<<<<<< HEAD
+=======
+	$data['directApply'] = ! empty( get_the_job_application_method( $post ) );
+
+>>>>>>> 2_5_VoThanhLuan
 	$salary   = get_the_job_salary( $post );
 	$currency = get_the_job_salary_currency( $post );
 	$unit     = get_the_job_salary_unit( $post );

@@ -6,11 +6,19 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+<<<<<<< HEAD
 RewriteBase /ProjectCMS-NhomC.git/wordpress/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /ProjectCMS-NhomC.git/wordpress/index.php [L]
+=======
+RewriteBase /CMS-T4/7-job/job/wordpress/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /CMS-T4/7-job/job/wordpress/index.php [L]
+>>>>>>> 2_5_VoThanhLuan
 </IfModule>
 
 # END WordPress

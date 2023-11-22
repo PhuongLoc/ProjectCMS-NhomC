@@ -31,6 +31,14 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 	private const DEACTIVATE_PROMOTION_ACTION = 'wpjm-deactivate-promotion';
 
 	/**
+<<<<<<< HEAD
+=======
+	 * Notice ID for promote job modal in the job editor.
+	 */
+	private const JOB_EDITOR_MODAL_NOTICE = 'promote-job-dialog';
+
+	/**
+>>>>>>> 2_5_VoThanhLuan
 	 * The single instance of the class.
 	 *
 	 * @var self
@@ -49,6 +57,10 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 		if ( is_null( self::$instance ) ) {
 			self::$instance = new self();
 		}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2_5_VoThanhLuan
 		return self::$instance;
 	}
 
@@ -65,6 +77,10 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 		add_action( 'wpjm_job_listing_bulk_actions', [ $this, 'add_action_notice' ] );
 		add_action( 'wpjm_admin_notices', [ $this, 'maybe_add_promoted_jobs_notice' ] );
 		add_action( 'wpjm_admin_notices', [ $this, 'maybe_add_trash_notice' ] );
+<<<<<<< HEAD
+=======
+		add_action( 'wpjm_admin_notices', [ $this, 'register_job_editor_modal_notice' ] );
+>>>>>>> 2_5_VoThanhLuan
 		add_action( 'post_row_actions', [ $this, 'remove_delete_from_promoted_jobs' ], 10, 2 );
 	}
 
@@ -357,17 +373,46 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 	public function promoted_jobs_admin_footer() {
 		$screen = get_current_screen();
 
+<<<<<<< HEAD
 		if ( in_array( $screen->id, [ 'edit-job_listing', 'job_listing' ], true ) ) { // Job listing and job editor.
+=======
+		// Job editor.
+		if ( 'job_listing' === $screen->id && ! \WP_Job_Manager_Admin_Notices::is_dismissed( self::JOB_EDITOR_MODAL_NOTICE, true ) ) {
+
+			$notice_wrapper_attributes = \WP_Job_Manager_Admin_Notices::get_dismissible_notice_wrapper_attributes( self::JOB_EDITOR_MODAL_NOTICE );
+
+			wp_enqueue_script( 'job_manager_notice_dismiss' );
+
+			?>
+			<template id="promote-job-template">
+				<?php echo $this->get_promote_jobs_template(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			</template>
+			<dialog
+				class="wpjm-dialog wpjm-admin-modal-notice is-dismissible"
+				id="promote-dialog"
+				<?php echo $notice_wrapper_attributes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			></dialog>
+			<?php
+		}
+
+		// Job listing.
+		if ( 'edit-job_listing' === $screen->id ) {
+
+>>>>>>> 2_5_VoThanhLuan
 			?>
 			<template id="promote-job-template">
 				<?php echo $this->get_promote_jobs_template(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</template>
 			<dialog class="wpjm-dialog" id="promote-dialog"></dialog>
+<<<<<<< HEAD
 			<?php
 		}
 
 		if ( 'edit-job_listing' === $screen->id ) { // Job listing.
 			?>
+=======
+
+>>>>>>> 2_5_VoThanhLuan
 			<dialog class="wpjm-dialog deactivate-dialog" id="deactivate-dialog">
 				<form class="dialog deactivate-button" method="dialog">
 					<button class="dialog-close" type="submit">X</button>
@@ -470,6 +515,34 @@ class WP_Job_Manager_Promoted_Jobs_Admin {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * Register a notice for the job editor promoted jobs modal.
+	 *
+	 * @internal
+	 *
+	 * @param array $notices Notices to filter on.
+	 *
+	 * @return array
+	 */
+	public function register_job_editor_modal_notice( $notices ) {
+
+		// This notice is not rendered, it's only used to track user dismissal for the modal.
+		$notices[ self::JOB_EDITOR_MODAL_NOTICE ] = [
+			'type'       => 'user',
+			'conditions' => [
+				[
+					'type'    => 'screens',
+					'screens' => [],
+				],
+			],
+		];
+
+		return $notices;
+	}
+
+	/**
+>>>>>>> 2_5_VoThanhLuan
 	 * Remove delete link from promoted jobs.
 	 * The delete action is also canceled as part of
 	 * `WP_Job_Manager_Promoted_Jobs::cancel_promoted_jobs_deletion`.

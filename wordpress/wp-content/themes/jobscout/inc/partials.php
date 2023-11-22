@@ -199,10 +199,17 @@ function jobscout_get_footer_copyright(){
     if( $copyright ){
         echo wp_kses_post( $copyright );
     }else{
+<<<<<<< HEAD
         esc_html_e( '&copy; Copyright ', 'jobscout' );
         echo date_i18n( esc_html__( 'Y', 'jobscout' ) );
         echo ' <a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a>. ';
         esc_html_e( 'All Rights Reserved. ', 'jobscout' );
+=======
+        esc_html_e( '&copy; ', 'jobscout' );
+        echo date_i18n( esc_html__( 'Y', 'jobscout' ) );
+        echo ' <a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a>. ';
+        // esc_html_e( 'All Rights Reserved. ', 'jobscout' );
+>>>>>>> 2_5_VoThanhLuan
     }
     echo '</span>';
 }

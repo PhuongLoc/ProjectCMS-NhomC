@@ -148,10 +148,16 @@ abstract class WP_Job_Manager_Usage_Tracking_Base {
 		$this->job_name                         = $this->get_prefix() . '_usage_tracking_send_usage_data';
 
 		// Set up the opt-in dialog.
+<<<<<<< HEAD
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_script_deps' ] );
 		add_action( 'admin_footer', [ $this, 'output_opt_in_js' ] );
 		add_action( 'admin_notices', [ $this, 'maybe_display_tracking_opt_in' ] );
 		add_action( 'wp_ajax_' . $this->get_prefix() . '_handle_tracking_opt_in', [ $this, 'handle_tracking_opt_in' ] );
+=======
+		add_action( 'wpjm_admin_notices', [ $this, 'maybe_display_tracking_opt_in' ] );
+		add_action( 'admin_action_' . $this->get_prefix() . '_tracking_opt_in', [ $this, 'handle_tracking_opt_in' ] );
+		add_action( 'wp_job_manager_notice_dismissed', [ $this, 'handle_tracking_opt_out' ], 10, 2 );
+>>>>>>> 2_5_VoThanhLuan
 
 		// Set up schedule and action needed for cron job.
 		add_filter( 'cron_schedules', [ $this, 'add_usage_tracking_two_week_schedule' ] );
@@ -163,12 +169,20 @@ abstract class WP_Job_Manager_Usage_Tracking_Base {
 	 * subclass.
 	 *
 	 * @param string $subclass the name of the subclass.
+<<<<<<< HEAD
+=======
+	 *
+>>>>>>> 2_5_VoThanhLuan
 	 * @return object Instance of $subclass.
 	 */
 	protected static function get_instance_for_subclass( $subclass ) {
 		if ( ! isset( self::$instances[ $subclass ] ) ) {
 			self::$instances[ $subclass ] = new $subclass();
 		}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2_5_VoThanhLuan
 		return self::$instances[ $subclass ];
 	}
 
@@ -323,6 +337,10 @@ abstract class WP_Job_Manager_Usage_Tracking_Base {
 	 * externally.
 	 *
 	 * @param array $schedules the existing cron schedules.
+<<<<<<< HEAD
+=======
+	 *
+>>>>>>> 2_5_VoThanhLuan
 	 * @return array of $schedules.
 	 **/
 	public function add_usage_tracking_two_week_schedule( $schedules ) {
@@ -378,6 +396,10 @@ abstract class WP_Job_Manager_Usage_Tracking_Base {
 			$plugin_name             = $this->get_plugin_name( $plugin_basename );
 			$plugins[ $plugin_name ] = $plugin['Version'];
 		}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2_5_VoThanhLuan
 		return $plugins;
 	}
 
@@ -396,6 +418,10 @@ abstract class WP_Job_Manager_Usage_Tracking_Base {
 				unset( $plugins[ $plugin_basename ] );
 			}
 		}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2_5_VoThanhLuan
 		return $plugins;
 	}
 
@@ -411,6 +437,10 @@ abstract class WP_Job_Manager_Usage_Tracking_Base {
 		if ( false === strpos( $basename, '/' ) ) {
 			return basename( $basename, '.php' );
 		}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2_5_VoThanhLuan
 		return dirname( $basename );
 	}
 
@@ -459,6 +489,11 @@ abstract class WP_Job_Manager_Usage_Tracking_Base {
 				'title'  => [],
 				'target' => [],
 			],
+<<<<<<< HEAD
+=======
+			'p'      => [],
+			'br'     => [],
+>>>>>>> 2_5_VoThanhLuan
 			'em'     => [],
 			'strong' => [],
 		];
@@ -467,12 +502,22 @@ abstract class WP_Job_Manager_Usage_Tracking_Base {
 	/**
 	 * If needed, display opt-in dialog to enable tracking. Should not be
 	 * called externally.
+<<<<<<< HEAD
 	 **/
 	public function maybe_display_tracking_opt_in() {
+=======
+	 *
+	 * @param array $notices Current notices.
+	 *
+	 * @access private
+	 **/
+	public function maybe_display_tracking_opt_in( $notices ) {
+>>>>>>> 2_5_VoThanhLuan
 		$opt_in_hidden         = $this->is_opt_in_hidden();
 		$user_tracking_enabled = $this->is_tracking_enabled();
 		$can_manage_tracking   = $this->current_user_can_manage_tracking();
 
+<<<<<<< HEAD
 		if ( ! $user_tracking_enabled && ! $opt_in_hidden && $can_manage_tracking ) { ?>
 			<div id="<?php echo esc_attr( $this->get_prefix() ); ?>-usage-tracking-notice" class="notice notice-info"
 				data-nonce="<?php echo esc_attr( wp_create_nonce( 'tracking-opt-in' ) ); ?>">
@@ -500,29 +545,101 @@ abstract class WP_Job_Manager_Usage_Tracking_Base {
 			</div>
 			<?php
 		}
+=======
+		if ( ! $user_tracking_enabled && ! $opt_in_hidden && $can_manage_tracking ) {
+
+			$action = $this->get_prefix() . '_tracking_opt_in';
+
+			$notices['usage_tracking_opt_in'] = [
+				'level'       => 'info',
+				'dismissible' => true,
+				'heading'     => __( 'Improve your experience', 'wp-job-manager' ),
+				'message'     => wp_kses( $this->opt_in_dialog_text(), $this->opt_in_dialog_text_allowed_html() ),
+				'actions'     => [
+					[
+						'label' => __( 'Enable Usage Tracking', 'wp-job-manager' ),
+						'url'   => add_query_arg(
+							[
+								'action'   => $action,
+								'_wpnonce' => wp_create_nonce( $action ),
+							],
+							admin_url( 'admin.php' )
+						),
+					],
+				],
+			];
+
+		}
+
+		return $notices;
+>>>>>>> 2_5_VoThanhLuan
 	}
 
 	/**
 	 * Handle ajax request from the opt-in dialog. Should not be called
 	 * externally.
+<<<<<<< HEAD
 	 **/
 	public function handle_tracking_opt_in() {
 		check_ajax_referer( 'tracking-opt-in', 'nonce' );
+=======
+	 *
+	 * @access private
+	 **/
+	public function handle_tracking_opt_in() {
+		check_admin_referer( $this->get_prefix() . '_tracking_opt_in' );
+>>>>>>> 2_5_VoThanhLuan
 
 		if ( ! $this->current_user_can_manage_tracking() ) {
 			wp_die( '', '', 403 );
 		}
 
+<<<<<<< HEAD
 		$enable_tracking = isset( $_POST['enable_tracking'] ) && '1' === $_POST['enable_tracking'];
 		$this->set_tracking_enabled( $enable_tracking );
 		$this->hide_tracking_opt_in();
 		$this->send_usage_data();
 		wp_die();
+=======
+		$this->set_tracking_enabled( true );
+		$this->hide_tracking_opt_in();
+		$this->send_usage_data();
+
+		wp_safe_redirect(
+			add_query_arg(
+				[
+					'action'   => false,
+					'_wpnonce' => false,
+				],
+				admin_url( 'edit.php?post_type=job_listing' )
+			)
+		);
+
+	}
+
+	/**
+	 * Disable usage tracking when the notice is dismissed.
+	 *
+	 * @param array  $notice    Notice data.
+	 * @param string $notice_id Notice ID.
+	 *
+	 * @access private
+	 */
+	public function handle_tracking_opt_out( $notice, $notice_id ) {
+
+		if ( 'usage_tracking_opt_in' !== $notice_id ) {
+			return;
+		}
+
+		$this->set_tracking_enabled( false );
+		$this->hide_tracking_opt_in();
+>>>>>>> 2_5_VoThanhLuan
 	}
 
 	/**
 	 * Ensure that jQuery has been enqueued since the opt-in dialog JS depends
 	 * on it. Should not be called externally.
+<<<<<<< HEAD
 	 **/
 	public function enqueue_script_deps() {
 		// Ensure jQuery is loaded.
@@ -534,11 +651,19 @@ abstract class WP_Job_Manager_Usage_Tracking_Base {
 			null,
 			true
 		);
+=======
+	 *
+	 * @deprecated since 2.0.0
+	 **/
+	public function enqueue_script_deps() {
+		_deprecated_function( __METHOD__, '$$next-version' );
+>>>>>>> 2_5_VoThanhLuan
 	}
 
 	/**
 	 * Output the JS code to handle the opt-in dialog. Should not be called
 	 * externally.
+<<<<<<< HEAD
 	 **/
 	public function output_opt_in_js() {
 		?>
@@ -589,6 +714,14 @@ abstract class WP_Job_Manager_Usage_Tracking_Base {
 		});
 	})( "<?php echo esc_js( $this->get_prefix() ); ?>" );
 </script>
+=======
+	 *
+	 * @deprecated since 2.0.0
+	 **/
+	public function output_opt_in_js() {
+		_deprecated_function( __METHOD__, '$$next-version' );
+		?>
+>>>>>>> 2_5_VoThanhLuan
 		<?php
 	}
 }

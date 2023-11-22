@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2_5_VoThanhLuan
 <?php
 /**
  * JobScout Template Functions which enhance the theme by hooking into WordPress
@@ -141,7 +145,11 @@ if( ! function_exists( 'jobscout_content_start' ) ) :
  *  
 */
 function jobscout_content_start(){       
+<<<<<<< HEAD
     echo '<div id="acc-content"><!-- .site-header -->';
+=======
+    echo '<div id="acc-content "><!-- .site-header -->';
+>>>>>>> 2_5_VoThanhLuan
     $home_sections = jobscout_get_home_sections(); 
     if( ! ( is_front_page() && ! is_home() && $home_sections ) ){ //Make necessary adjust for pg template.
         echo is_404() ? '<div class="error-holder">' : '<div id="content" class="site-content">'; 
@@ -500,7 +508,11 @@ if( ! function_exists( 'jobscout_footer_top' ) ) :
  * Footer Top
 */
 function jobscout_footer_top(){    
+<<<<<<< HEAD
     $footer_sidebars = array( 'footer-one', 'footer-two', 'footer-three', 'footer-four' );
+=======
+    $footer_sidebars = array('footer-three');
+>>>>>>> 2_5_VoThanhLuan
     $active_sidebars = array();
     $sidebar_count   = 0;
     
@@ -518,6 +530,10 @@ function jobscout_footer_top(){
                 <?php foreach( $active_sidebars as $active ){ ?>
     				<div class="col">
     				   <?php dynamic_sidebar( $active ); ?>	
+<<<<<<< HEAD
+=======
+                       <?php echo ' <a href="' . esc_url(home_url('/')) . '">' . esc_html(get_bloginfo('name')) . '</a> '; ?>
+>>>>>>> 2_5_VoThanhLuan
     				</div>
                 <?php } ?>
                 </div>
@@ -542,8 +558,13 @@ function jobscout_footer_bottom(){ ?>
 			<div class="copyright">            
             <?php
                 jobscout_get_footer_copyright();
+<<<<<<< HEAD
                 jobscout_ed_author_link();
                 jobscout_ed_wp_link();
+=======
+                // jobscout_ed_author_link();
+                // jobscout_ed_wp_link();
+>>>>>>> 2_5_VoThanhLuan
             ?>               
             </div>
 		</div>

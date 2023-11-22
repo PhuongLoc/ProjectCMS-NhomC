@@ -13,7 +13,10 @@ if ( ! $sidebar ){
 	return;
 }
 ?>
+<<<<<<< HEAD
 
 <aside id="secondary" class="widget-area" role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
 	<?php dynamic_sidebar( $sidebar ); ?>
 </aside><!-- #secondary -->
+=======
+>>>>>>> 2_5_VoThanhLuan
